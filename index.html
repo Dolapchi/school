@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Carbon Site</title>
+        <link href="/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+        <link href="/css/bootstrap.min.css" rel="stylesheet">
+        
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        width: 100%;
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+    </style>
+<!-- Custom styles for this template -->
+    <link href="/css/carousel.css" rel="stylesheet">
+  </head>
+  <body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  <script src=".../js/bootstrap.bundle.min.js"></script>
+ <header data-bs-theme="dark">
+  <nav class="navbar navbar-expand fixed-top navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Карбон&#174</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExampleXxl" aria-controls="navbarsExampleXxl" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarsExampleXxl">
+        <ul class="navbar-nav me-auto mb-2 mb-xl-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="http://127.0.0.1:63227/index.html">Домашняя</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Производство</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled aria-disabled=true">О компании</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Выбрать регион</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Центральный Федеральный округ</a></li>
+              <li><a class="dropdown-item" href="#">Северо-Западный Федеральный округ</a></li>
+              <li><a class="dropdown-item" href="#">Южный Федеральный округ</a></li>
+              <li><a class="dropdown-item" href="#">Приволжский Федеральный округ</a></li>
+              <li><a class="dropdown-item" href="#">Уральский Федеральный округ</a></li>
+              <li><a class="dropdown-item" href="#">Сибирский Федеральный округ</a></li>
+              <li><a class="dropdown-item" href="#">Дальневосточный Федеральный округ</a></li>
+              <li><a class="dropdown-item" href="#">Северо-Кавказский Федеральный округ</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Введите запрос" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Поиск</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+          <img src="/img/slider_banner_1.png">
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h1>Карбон в автомобилестроении #1.</h1>
+            <p class="opacity-75">Что такое карбоновое волокно, какими свойствами обладает, где применяется.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Узнать больше</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item"><img src="/img/slider_banner_2.png">
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Карбон в автомобилестроении #2.</h1>
+            <p>Карбоновый кузов BMW i3 на заводе BMW в Лейпциге отправляется на следующий производственный этап.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Узнать больше</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item"><img src="/img/slider_banner_3.png">
+        <div class="container">
+          <div class="carousel-caption text-end">
+            <h1>Карбон в автомобилестроении #3.</h1>
+            <p>Как гигантский ткацкий станок: производство многослойных листов на заводе BMW в Вакерсдорфе.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Узнать больше</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Предыдущий</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Следующий</span>
+    </button>
+  </div>
+
+  <div class="container marketing"> <!-- 3 колонки -->
+    <div class="row">
+      <div class="col-lg-4">
+          <img src="/img/column_123.png" width-"140" height="140">
+          <h2 class="fw-normal">1-й факт о карбоне</h2>
+          <p>Карбон легкий и прочный материал.</p>
+          <p><a class="btn btn-secondary" href="#">Подробнее &raquo;</a></p>
+      </div>
+      <div class="col-lg-4"><img src="/img/column_123.png" width-"140" height="140">
+          <h2 class="fw-normal">2-й факт о карбоне</h2>
+          <p>Карбон имеет уникальный внешний вид.</p>
+          <p><a class="btn btn-secondary" href="#">Подробнее &raquo;</a></p>
+      </div>
+      <div class="col-lg-4"><img src="/img/column_123.png" width-"140" height="140">
+          <h2 class="fw-normal">3-й факт о карбоне</h2>
+          <p>Карбон производится в основном вручную.</p>
+          <p><a class="btn btn-secondary" href="#">Подробнее &raquo;</a></p>
+      </div>
+    </div>
+
+<!-- START THE FEATURETTES -->
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1">Что такое карбон? <span class="text-body-secondary">Как он производится.</span></h2>
+        <p class="lead">Детали из неокрашенного карбона в основном производятся вручную. А это требует больших временных затрат. Таким образом, изготовление одной единственной детали может занять целый день.</p>
+        <p><a class="btn btn-secondary" href="#">Читать &raquo;</a></p>        
+       </div>
+    <div class="col-md-5">
+        <img src="/img/Carbon%20production.png" width="500" height="500">
+    </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading fw-normal lh-1">Синий, фиолетовый, красный:<span class="text-body-secondary"> История эмблемы BMW M.</span></h2>
+        <p class="lead">M1, M3 или M5 – эти названия моделей суббренда BMW M находят горячий отклик в сердцах многих автолюбителей. Так же хорошо всем знакомы и цвета эмблемы BMW M. Но почему именно эти цвета? И кто придумал этот фирменный отличительный знак?</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img src="/img/Carbon%20bmwM.png" width="500" height="500">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1">В BMW рассказали о применении углепластика в своих автомобилях. <span class="text-body-secondary">На заметку.</span></h2>
+        <p class="lead">Одной левой: сотрудники Центра инновация и производства на заводе BMW в Ландсхуте несут карбоновую боковую раму BMW i8.
+</p>
+      </div>
+      <div class="col-md-5">
+        <img src="img/Carbon%20i8.png" width="500" height="500">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+    </div>
+<!-- /END THE FEATURETTES -->
+<!-- FOOTER -->
+  <footer class="container">
+    <p class="float-end"><a href="#">В начало страницы</a></p>
+    <p>&copy; 2023 | dolapchi.btl &middot; <a href="https://vh424.timeweb.ru/parking/?ref=dolapchi.ru">Подробнее</a> &middot; <a href="mailto:anton.mikhailov@outlook.com">Написать</a></p>
+  </footer>
+</main>
+<script src="/js/bootstrap.bundle.min.js"></script>
+
+    </body>
+</html>
