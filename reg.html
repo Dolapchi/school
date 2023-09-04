@@ -1,15 +1,10 @@
 <!doctype html>
-<html lang="en" data-bs-theme="auto">
+<html lang="ru">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Carbon Site</title>
-        <link href="/css/bootstrap.min.css" rel="stylesheet">
-        
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
-        <link href="/css/bootstrap.min.css" rel="stylesheet">
-        
-
+        <link rel="stylesheet" href="/css/style.css">
     <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -20,7 +15,7 @@
       }
 
       @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
+      .bd-placeholder-img-lg {
           font-size: 3.5rem;
         }
       }
@@ -62,15 +57,29 @@
         white-space: nowrap;
         -webkit-overflow-scrolling: touch;
       }
-      
+        
+       .btn-bd-primary {
+        --bd-violet-bg: #712cf9;
+        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+        --bs-btn-font-weight: 600;
+        --bs-btn-color: var(--bs-white);
+        --bs-btn-bg: var(--bd-violet-bg);
+        --bs-btn-border-color: var(--bd-violet-bg);
+        --bs-btn-hover-color: var(--bs-white);
+        --bs-btn-hover-bg: #6528e0;
+        --bs-btn-hover-border-color: #6528e0;
+        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+        --bs-btn-active-color: var(--bs-btn-hover-color);
+        --bs-btn-active-bg: #5a23c8;
+        --bs-btn-active-border-color: #5a23c8;
+      }
       
     </style>
-<!-- Custom styles for this template -->
-<link href="modals.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/modals.css">
   </head>
   <body>
- 
- <header data-bs-theme="dark">
+  <header data-bs-theme="dark">
   <nav class="navbar navbar-expand fixed-top navbar-dark bg-dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Карбон&#174</a>
@@ -112,47 +121,56 @@
 </header>
 
 <main>
+<div class="b-example-divider"></div>
 
+<div class="modal modal-sheet position-static d-block bg-body-secondary p-4 py-md-5" tabindex="-1" role="dialog" id="modalSignin">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content rounded-4 shadow">
+      <div class="modal-header p-5 pb-4 border-bottom-0">
+        <h1 class="fw-bold mb-0 fs-2">Подписаться</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
 
-<div class="modal-body p-5 pt-0">
+      <div class="modal-body p-5 pt-0">
         <form class="">
           <div class="form-floating mb-3">
-            <input type="email" class="form-control rounded-3" id="floatingInput" placeholder="name@example.com">
-            <label for="floatingInput">Email address</label>
+            <input type="email" class="form-control rounded-3" id="floatingInput" placeholder="anton.mikhailov.com">
+            <label for="floatingInput">Адрес электронной почты</label>
           </div>
           <div class="form-floating mb-3">
-            <input type="password" class="form-control rounded-3" id="floatingPassword" placeholder="Password">
-            <label for="floatingPassword">Password</label>
+            <input type="password" class="form-control rounded-3" id="floatingPassword" placeholder="Пароль">
+            <label for="floatingPassword">Пароль</label>
           </div>
-          <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Sign up</button>
-          <small class="text-body-secondary">By clicking Sign up, you agree to the terms of use.</small>
+            <a class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit" href="mailto:anton.mikhailov@outlook.com">Отправить</a>
+            <small class="text-body-secondary">Нажимая на кнопку, я даю своё согласие на обработку персональных данных и соглашаюсь с условиями политики конфиденциальности</small>
           <hr class="my-4">
-          <h2 class="fs-5 fw-bold mb-3">Or use a third-party</h2>
+          <h2 class="fs-5 fw-bold mb-3">Войти с помощью</h2>
           <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="submit">
             <svg class="bi me-1" width="16" height="16"><use xlink:href="#twitter"/></svg>
-            Sign up with Twitter
+            Twitter
           </button>
           <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="submit">
             <svg class="bi me-1" width="16" height="16"><use xlink:href="#facebook"/></svg>
-            Sign up with Facebook
+            Facebook
           </button>
           <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="submit">
             <svg class="bi me-1" width="16" height="16"><use xlink:href="#github"/></svg>
-            Sign up with GitHub
+            GitHub
           </button>
         </form>
       </div>
- 
-<div class="b-example-divider"></div>
+    </div>
+  </div>
+</div>
 
-      </main>
-       <hr class="featurette-divider">
-<!-- FOOTER -->
+ 
+</main>
+<hr class="featurette-divider">
   <footer class="container">
     <p class="float-end"><a href="#">В начало страницы</a></p>
     <p>&copy; 2023 | dolapchi.btl &middot; <a href="https://vh424.timeweb.ru/parking/?ref=dolapchi.ru">Подробнее</a> &middot; <a href="mailto:anton.mikhailov@outlook.com">Написать</a></p>
   </footer>
 
-<script src="/js/bootstrap.bundle.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
